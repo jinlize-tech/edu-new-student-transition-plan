@@ -1,0 +1,17 @@
+{
+  "product_id": "JLZ-EDU-SK-090",
+  "repository_name": "edu-new-student-transition-plan",
+  "version": "1.0.1",
+  "tested_source_commit": "9e3496576c2cf65e12c3d1e7443fcda50d8ed852",
+  "tested_source_tree_sha": "ae6e37a76247a4c22284c068167cb85dfbc3ac68",
+  "package_path": "dist/edu-new-student-transition-plan-v1.0.1.zip",
+  "package_sha256": "8CA786AE5E09BEE8973072735D1B015AF0DDE180B090777FED26CD19B8389FAA",
+  "runtime_test_status": "LOCAL_TEST_PASS",
+  "runtime_test_count": 50,
+  "schema_validation_status": "SCHEMA_INSTANCE_VALIDATION_PASS",
+  "schema_validation_case_count": 16,
+  "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "readme_repair": "PASS",
+  "plugin_author_name": null
+}
