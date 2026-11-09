@@ -1,0 +1,31 @@
+{
+  "number": 90,
+  "product_id": "JLZ-EDU-SK-090",
+  "candidate_id": "CAND-021",
+  "chinese_name": "新生入学适应计划",
+  "english_name": "New Student Transition Plan",
+  "repository_name": "edu-new-student-transition-plan",
+  "repository_url": "https://github.com/jinlize-tech/edu-new-student-transition-plan",
+  "product_type": "Skill",
+  "category": "11 学员成功与家庭服务中心",
+  "batch": 3,
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "core_outputs": [
+    "新生适应计划",
+    "第一课流程",
+    "风险升级条件"
+  ],
+  "optional_outputs": [
+    "家长知情清单",
+    "教师观察表",
+    "回访节点"
+  ],
+  "high_risk": false,
+  "deterministic": false,
+  "scenario_count": 12,
+  "package_path": "dist/edu-new-student-transition-plan-v1.0.0.zip",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "status": "LOCAL_DEVELOPMENT_COMPLETE_PENDING_REMOTE_VERIFICATION"
+}

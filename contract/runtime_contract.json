@@ -1,0 +1,98 @@
+{
+  "contract_version": "1.2.0",
+  "product_id": "JLZ-EDU-SK-090",
+  "product_name": "新生入学适应计划",
+  "product_type": "Skill",
+  "repository_name": "edu-new-student-transition-plan",
+  "repository_url": "https://github.com/jinlize-tech/edu-new-student-transition-plan",
+  "product_version": "1.0.0",
+  "batch": 3,
+  "business_category": "11 学员成功与家庭服务中心",
+  "high_risk": false,
+  "deterministic": false,
+  "agent": false,
+  "core_outputs": [
+    "新生适应计划",
+    "第一课流程",
+    "风险升级条件"
+  ],
+  "optional_outputs": [
+    "家长知情清单",
+    "教师观察表",
+    "回访节点"
+  ],
+  "all_outputs": [
+    "新生适应计划",
+    "第一课流程",
+    "风险升级条件",
+    "家长知情清单",
+    "教师观察表",
+    "回访节点"
+  ],
+  "human_review_required": false,
+  "reviewer_role": "业务负责人",
+  "commercial_boundary": null,
+  "input_required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "student_age",
+    "program_and_class",
+    "start_date",
+    "logistics",
+    "staff_assignments",
+    "campus_rules"
+  ],
+  "input_properties": {
+    "contract_version": {
+      "type": "string"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ]
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "student_age": {
+      "type": "string"
+    },
+    "program_and_class": {
+      "type": "string"
+    },
+    "start_date": {
+      "type": "string"
+    },
+    "logistics": {
+      "type": "string"
+    },
+    "learning_history": {
+      "type": "string"
+    },
+    "parent_concerns": {
+      "type": "array"
+    },
+    "staff_assignments": {
+      "type": "array"
+    },
+    "campus_rules": {
+      "type": "array"
+    }
+  },
+  "expected_scenario_count": 12,
+  "license": "Apache-2.0",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED"
+}

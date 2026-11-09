@@ -1,0 +1,172 @@
+{
+  "cases": [
+    {
+      "case_id": "normal_complete",
+      "expected_status": "READY_FOR_PROCESSING",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "student_age": "学生年龄或年级已核对（脱敏示例）",
+        "program_and_class": "课程与班型已核对（脱敏示例）",
+        "start_date": "2026-11-10",
+        "logistics": "到校与设备信息已核对（脱敏示例）",
+        "learning_history": "学习经历摘要已核对（脱敏示例）",
+        "parent_concerns": [
+          {}
+        ],
+        "staff_assignments": [
+          {}
+        ],
+        "campus_rules": [
+          {}
+        ]
+      }
+    },
+    {
+      "case_id": "missing_required",
+      "expected_status": "NEEDS_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "program_and_class": "课程与班型已核对（脱敏示例）",
+        "start_date": "2026-11-10",
+        "logistics": "到校与设备信息已核对（脱敏示例）",
+        "learning_history": "学习经历摘要已核对（脱敏示例）",
+        "parent_concerns": [
+          {}
+        ],
+        "staff_assignments": [
+          {}
+        ],
+        "campus_rules": [
+          {}
+        ]
+      }
+    },
+    {
+      "case_id": "invalid_type",
+      "expected_status": "INVALID_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "student_age": 123,
+        "program_and_class": "课程与班型已核对（脱敏示例）",
+        "start_date": "2026-11-10",
+        "logistics": "到校与设备信息已核对（脱敏示例）",
+        "learning_history": "学习经历摘要已核对（脱敏示例）",
+        "parent_concerns": [
+          {}
+        ],
+        "staff_assignments": [
+          {}
+        ],
+        "campus_rules": [
+          {}
+        ]
+      }
+    },
+    {
+      "case_id": "unconfirmed",
+      "expected_status": "NEEDS_CONFIRMATION",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "unconfirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "student_age": "学生年龄或年级已核对（脱敏示例）",
+        "program_and_class": "课程与班型已核对（脱敏示例）",
+        "start_date": "2026-11-10",
+        "logistics": "到校与设备信息已核对（脱敏示例）",
+        "learning_history": "学习经历摘要已核对（脱敏示例）",
+        "parent_concerns": [
+          {}
+        ],
+        "staff_assignments": [
+          {}
+        ],
+        "campus_rules": [
+          {}
+        ]
+      }
+    },
+    {
+      "case_id": "partial_confirmation",
+      "expected_status": "NEEDS_CONFIRMATION",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "partially_confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "student_age": "学生年龄或年级已核对（脱敏示例）",
+        "program_and_class": "课程与班型已核对（脱敏示例）",
+        "start_date": "2026-11-10",
+        "logistics": "到校与设备信息已核对（脱敏示例）",
+        "learning_history": "学习经历摘要已核对（脱敏示例）",
+        "parent_concerns": [
+          {}
+        ],
+        "staff_assignments": [
+          {}
+        ],
+        "campus_rules": [
+          {}
+        ]
+      }
+    },
+    {
+      "case_id": "sensitive_marked",
+      "expected_status": "READY_WITH_PRIVACY_WARNING",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": true,
+        "requested_output_language": "zh-CN",
+        "student_age": "学生年龄或年级已核对（脱敏示例）",
+        "program_and_class": "课程与班型已核对（脱敏示例）",
+        "start_date": "2026-11-10",
+        "logistics": "到校与设备信息已核对（脱敏示例）",
+        "learning_history": "学习经历摘要已核对（脱敏示例）",
+        "parent_concerns": [
+          {}
+        ],
+        "staff_assignments": [
+          {}
+        ],
+        "campus_rules": [
+          {}
+        ]
+      }
+    },
+    {
+      "case_id": "undeclared_field",
+      "expected_status": "INVALID_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "student_age": "学生年龄或年级已核对（脱敏示例）",
+        "program_and_class": "课程与班型已核对（脱敏示例）",
+        "start_date": "2026-11-10",
+        "logistics": "到校与设备信息已核对（脱敏示例）",
+        "learning_history": "学习经历摘要已核对（脱敏示例）",
+        "parent_concerns": [
+          {}
+        ],
+        "staff_assignments": [
+          {}
+        ],
+        "campus_rules": [
+          {}
+        ],
+        "未声明字段": "不应被接受"
+      }
+    }
+  ]
+}

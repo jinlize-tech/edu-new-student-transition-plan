@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.jinlize.tech/education/JLZ-EDU-SK-090/input.schema.json",
+  "title": "新生入学适应计划输入契约",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "student_age",
+    "program_and_class",
+    "start_date",
+    "logistics",
+    "staff_assignments",
+    "campus_rules"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "1.2.0"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ],
+      "description": "输入资料的确认状态"
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "student_age": {
+      "title": "学生年龄或年级",
+      "description": "用于设计适龄适应任务",
+      "type": "string",
+      "minLength": 1
+    },
+    "program_and_class": {
+      "title": "课程与班型",
+      "description": "首次课、上课频次和教师安排",
+      "type": "string",
+      "minLength": 1
+    },
+    "start_date": {
+      "title": "开课日期",
+      "description": "ISO 日期或明确日期口径",
+      "type": "string",
+      "minLength": 1
+    },
+    "logistics": {
+      "title": "到校与设备信息",
+      "description": "交通、接送、设备和场地",
+      "type": "string",
+      "minLength": 1
+    },
+    "learning_history": {
+      "title": "学习经历摘要",
+      "description": "不包含不必要的医疗或家庭隐私",
+      "type": "string",
+      "minLength": 1
+    },
+    "parent_concerns": {
+      "title": "家长关注点",
+      "description": "用户主动提供的关注事项",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "staff_assignments": {
+      "title": "教师与教务安排",
+      "description": "角色和责任",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "campus_rules": {
+      "title": "校区规则",
+      "description": "新生需要理解的规则",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    }
+  }
+}
