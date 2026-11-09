@@ -2,10 +2,10 @@
   "product_id": "JLZ-EDU-SK-090",
   "repository_name": "edu-new-student-transition-plan",
   "product_type": "Skill",
-  "version": "1.0.0",
-  "package_path": "dist/edu-new-student-transition-plan-v1.0.0.zip",
-  "sha256": "8A59F4FB65F22DF801DDBF5C048288A6806318C99EA10ADF1367B390777B6D83",
-  "bytes": 40070,
+  "version": "1.0.1",
+  "package_path": "dist/edu-new-student-transition-plan-v1.0.1.zip",
+  "sha256": "8CA786AE5E09BEE8973072735D1B015AF0DDE180B090777FED26CD19B8389FAA",
+  "bytes": 41094,
   "entries": [
     "edu-new-student-transition-plan/README.md",
     "edu-new-student-transition-plan/PRODUCT_SPEC.md",
@@ -34,5 +34,9 @@
   "license": "Apache-2.0",
   "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
   "workbuddy_validation": "NOT_EXECUTED",
-  "built_at": "2026-11-09T00:00:00+08:00"
+  "built_at": "2026-11-09T12:06:03.509889+00:00",
+  "previous_version": "1.0.0",
+  "previous_package_path": "dist/edu-new-student-transition-plan-v1.0.0.zip",
+  "previous_package_sha256": "8A59F4FB65F22DF801DDBF5C048288A6806318C99EA10ADF1367B390777B6D83",
+  "patch_reason": "README_USAGE_INSTALLATION_AND_PLATFORM_METADATA_FINALIZATION"
 }
